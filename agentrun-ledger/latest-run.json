@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "runId": "candidate-keyword-top1-2026-05-03T21-48-39-657Z-39cc3024",
+    "timestamp": "2026-05-03T21:48:39.657Z",
+    "appVersion": "0.1.0",
+    "gitBranch": "main",
+    "gitCommit": "0f6767e",
+    "command": "npm run demo candidate",
+    "environment": "win32 x64, node v24.14.1",
+    "suitePath": "data\\demo-suite.json",
+    "suiteName": "SaaS Help Center Demo Suite",
+    "baselineRunId": "baseline-keyword-top3-2026-05-03T21-48-39-579Z-005c911b",
+    "modelProvider": "local deterministic mock",
+    "embeddingConfig": "none",
+    "retrieverConfig": "keyword",
+    "topK": 1,
+    "scoringConfig": "heuristic-v1 overall=0.40 facts + 0.25 faithfulness + 0.20 context + 0.15 similarity"
+  },
+  "config": {
+    "name": "candidate-keyword-top1",
+    "retriever": "keyword",
+    "generator": "extractive",
+    "topK": 1
+  },
+  "suite": {
+    "id": "saas-help-center-demo",
+    "name": "SaaS Help Center Demo Suite",
+    "testCount": 8
+  },
+  "results": [
+    {
+      "testId": "refund-policy-001",
+      "question": "What is the refund window and condition?",
+      "expectedFacts": [
+        "Refunds are available within 30 days",
+        "The item must be unused"
+      ],
+      "retrievedContext": [
+        {
+          "id": "refund-window",
+          "title": "Refund Window",
+          "snippet": "Customers can request a refund within 30 days of purchase.",
+          "score": 0.9714
+        }
+      ],
+      "generatedAnswer": "Customers can request a refund within 30 days of purchase.",
+      "metrics": {
+        "answerSimilarity": 0.5,
+        "expectedFactCoverage": 0.5,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.725
+      },
+      "passed": true,
+      "latencyMs": 0.15,
+      "regressionStatus": "regressed"
+    },
+    {
+      "testId": "password-reset-001",
+      "question": "How can a user reset a forgotten password?",
+      "expectedFacts": [
+        "Use the Forgot password link on the sign in page",
+        "A reset link is sent by email"
+      ],
+      "retrievedContext": [
+        {
+          "id": "password-entry",
+          "title": "Forgotten Password",
+          "snippet": "Users who forget a password should select the Forgot password link on the sign in page.",
+          "score": 1
+        }
+      ],
+      "generatedAnswer": "Users who forget a password should select the Forgot password link on the sign in page.",
+      "metrics": {
+        "answerSimilarity": 0.5556,
+        "expectedFactCoverage": 0.5,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.7333
+      },
+      "passed": true,
+      "latencyMs": 0.47,
+      "regressionStatus": "regressed"
+    },
+    {
+      "testId": "account-deletion-001",
+      "question": "What happens when an account is deleted?",
+      "expectedFacts": [
+        "Account deletion starts from the workspace settings page",
+        "Data is permanently removed after 14 days"
+      ],
+      "retrievedContext": [
+        {
+          "id": "delete-settings",
+          "title": "Delete Account",
+          "snippet": "Workspace owners can start account deletion from the workspace settings page.",
+          "score": 1.0821
+        }
+      ],
+      "generatedAnswer": "Workspace owners can start account deletion from the workspace settings page.",
+      "metrics": {
+        "answerSimilarity": 0.5,
+        "expectedFactCoverage": 0.5,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.725
+      },
+      "passed": true,
+      "latencyMs": 0.09,
+      "regressionStatus": "regressed"
+    },
+    {
+      "testId": "subscription-upgrade-001",
+      "question": "Who can upgrade a subscription and when does the change apply?",
+      "expectedFacts": [
+        "Only workspace admins can upgrade a subscription",
+        "Plan upgrades take effect immediately"
+      ],
+      "retrievedContext": [
+        {
+          "id": "upgrade-admin",
+          "title": "Upgrade Permission",
+          "snippet": "Only workspace admins can upgrade or downgrade a subscription plan.",
+          "score": 1.0821
+        }
+      ],
+      "generatedAnswer": "Only workspace admins can upgrade or downgrade a subscription plan.",
+      "metrics": {
+        "answerSimilarity": 0.6667,
+        "expectedFactCoverage": 0.75,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.85
+      },
+      "passed": true,
+      "latencyMs": 0.08,
+      "regressionStatus": "unchanged"
+    },
+    {
+      "testId": "data-export-001",
+      "question": "How does a customer export workspace data?",
+      "expectedFacts": [
+        "Admins can request a data export from workspace settings",
+        "The export is delivered as a downloadable archive"
+      ],
+      "retrievedContext": [
+        {
+          "id": "export-settings",
+          "title": "Data Export Request",
+          "snippet": "Workspace admins can request a data export from workspace settings.",
+          "score": 1.4
+        }
+      ],
+      "generatedAnswer": "Workspace admins can request a data export from workspace settings.",
+      "metrics": {
+        "answerSimilarity": 0.6667,
+        "expectedFactCoverage": 0.5,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.75
+      },
+      "passed": true,
+      "latencyMs": 0.07,
+      "regressionStatus": "regressed"
+    },
+    {
+      "testId": "team-invites-001",
+      "question": "What should I know about inviting teammates?",
+      "expectedFacts": [
+        "Admins and managers can invite teammates",
+        "Invitations expire after 7 days"
+      ],
+      "retrievedContext": [
+        {
+          "id": "invite-roles",
+          "title": "Invite Roles",
+          "snippet": "Admins and managers can invite teammates from the Members screen.",
+          "score": 0.8917
+        }
+      ],
+      "generatedAnswer": "Admins and managers can invite teammates from the Members screen.",
+      "metrics": {
+        "answerSimilarity": 0.4444,
+        "expectedFactCoverage": 0.5,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.7167
+      },
+      "passed": false,
+      "latencyMs": 0.06,
+      "regressionStatus": "newly_failing"
+    },
+    {
+      "testId": "invoice-download-001",
+      "question": "Where can billing invoices be downloaded?",
+      "expectedFacts": [
+        "Invoices are available in the billing history page",
+        "Only billing admins can download invoices"
+      ],
+      "retrievedContext": [
+        {
+          "id": "invoice-permission",
+          "title": "Invoice Permission",
+          "snippet": "Only billing admins can download invoice PDFs.",
+          "score": 1.0583
+        }
+      ],
+      "generatedAnswer": "Only billing admins can download invoice PDFs.",
+      "metrics": {
+        "answerSimilarity": 0.625,
+        "expectedFactCoverage": 0.75,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.8438
+      },
+      "passed": true,
+      "latencyMs": 0.07,
+      "regressionStatus": "regressed"
+    },
+    {
+      "testId": "security-policy-001",
+      "question": "What security controls protect customer accounts?",
+      "expectedFacts": [
+        "Single sign on is available on enterprise plans",
+        "Audit logs record administrative changes",
+        "Two factor authentication can be required"
+      ],
+      "retrievedContext": [
+        {
+          "id": "security-sso",
+          "title": "Single Sign On",
+          "snippet": "Single sign on is available on enterprise plans for centralized identity management.",
+          "score": 1.025
+        }
+      ],
+      "generatedAnswer": "Single sign on is available on enterprise plans for centralized identity management.",
+      "metrics": {
+        "answerSimilarity": 0.3571,
+        "expectedFactCoverage": 0.3333,
+        "contextPrecision": 1,
+        "faithfulness": 1,
+        "overallScore": 0.6369
+      },
+      "passed": false,
+      "latencyMs": 0.08,
+      "regressionStatus": "newly_failing"
+    }
+  ],
+  "summary": {
+    "totalTests": 8,
+    "passed": 6,
+    "failed": 2,
+    "regressed": 7,
+    "improved": 0,
+    "unchanged": 1,
+    "averageFaithfulness": 1,
+    "averageAnswerSimilarity": 0.5394,
+    "averageContextPrecision": 1,
+    "averageLatencyMs": 0.1338,
+    "importantFailures": [
+      "team-invites-001: 0.7167",
+      "security-policy-001: 0.6369"
+    ],
+    "nextRecommendedSteps": [
+      "Inspect regressed tests and compare retrieved context coverage against the baseline.",
+      "Check whether expected facts are split across documents that the candidate did not retrieve."
+    ]
+  }
+}

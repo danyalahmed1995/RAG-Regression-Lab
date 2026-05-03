@@ -91,6 +91,14 @@ out
 .nuxt
 dist
 
+# RAG Regression Lab generated output
+reports/*.json
+reports/*.md
+!reports/.gitkeep
+agentrun-ledger/runs/*.json
+agentrun-ledger/runs/*.md
+!agentrun-ledger/runs/.gitkeep
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js

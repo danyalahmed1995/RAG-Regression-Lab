@@ -1,0 +1,35 @@
+{
+  "name": "rag-regression-lab",
+  "version": "0.1.0",
+  "description": "Local-first regression testing harness for RAG pipelines.",
+  "type": "module",
+  "bin": {
+    "rag-lab": "dist/cli/index.js"
+  },
+  "scripts": {
+    "seed": "tsx src/cli/index.ts seed",
+    "rag:run": "tsx src/cli/index.ts run",
+    "rag:compare": "tsx src/cli/index.ts compare",
+    "rag:report": "tsx src/cli/index.ts report",
+    "demo": "tsx src/cli/index.ts demo",
+    "lint": "tsc --noEmit",
+    "test": "vitest run tests",
+    "build": "tsc"
+  },
+  "keywords": [
+    "rag",
+    "evaluation",
+    "regression-testing",
+    "llmops"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}

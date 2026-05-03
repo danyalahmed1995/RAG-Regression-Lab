@@ -1,0 +1,225 @@
+{
+  "id": "saas-help-center-demo",
+  "name": "SaaS Help Center Demo Suite",
+  "description": "Golden tests for common SaaS support questions where facts are spread across short help-center snippets.",
+  "version": "0.1.0",
+  "cases": [
+    {
+      "id": "refund-policy-001",
+      "question": "What is the refund window and condition?",
+      "expectedFacts": [
+        "Refunds are available within 30 days",
+        "The item must be unused"
+      ],
+      "documents": [
+        {
+          "id": "refund-window",
+          "title": "Refund Window",
+          "content": "Customers can request a refund within 30 days of purchase."
+        },
+        {
+          "id": "refund-condition",
+          "title": "Refund Condition",
+          "content": "Refund approval requires that the item is unused and returned with its receipt."
+        },
+        {
+          "id": "refund-exclusions",
+          "title": "Refund Exclusions",
+          "content": "Custom enterprise onboarding fees are not eligible for refunds."
+        }
+      ],
+      "tags": ["policy", "refund"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "password-reset-001",
+      "question": "How can a user reset a forgotten password?",
+      "expectedFacts": [
+        "Use the Forgot password link on the sign in page",
+        "A reset link is sent by email"
+      ],
+      "documents": [
+        {
+          "id": "password-entry",
+          "title": "Forgotten Password",
+          "content": "Users who forget a password should select the Forgot password link on the sign in page."
+        },
+        {
+          "id": "password-email",
+          "title": "Password Email",
+          "content": "The system sends a password reset link to the verified email address on the account."
+        },
+        {
+          "id": "password-expiry",
+          "title": "Reset Link Expiry",
+          "content": "Password reset links expire after 60 minutes for security."
+        }
+      ],
+      "tags": ["account", "password"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "account-deletion-001",
+      "question": "What happens when an account is deleted?",
+      "expectedFacts": [
+        "Account deletion starts from the workspace settings page",
+        "Data is permanently removed after 14 days"
+      ],
+      "documents": [
+        {
+          "id": "delete-settings",
+          "title": "Delete Account",
+          "content": "Workspace owners can start account deletion from the workspace settings page."
+        },
+        {
+          "id": "delete-retention",
+          "title": "Deletion Retention",
+          "content": "Deleted account data is permanently removed after a 14 day recovery period."
+        },
+        {
+          "id": "delete-billing",
+          "title": "Deletion Billing",
+          "content": "Deleting a workspace cancels future billing after the current invoice cycle closes."
+        }
+      ],
+      "tags": ["account", "privacy"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "subscription-upgrade-001",
+      "question": "Who can upgrade a subscription and when does the change apply?",
+      "expectedFacts": [
+        "Only workspace admins can upgrade a subscription",
+        "Plan upgrades take effect immediately"
+      ],
+      "documents": [
+        {
+          "id": "upgrade-admin",
+          "title": "Upgrade Permission",
+          "content": "Only workspace admins can upgrade or downgrade a subscription plan."
+        },
+        {
+          "id": "upgrade-timing",
+          "title": "Upgrade Timing",
+          "content": "Plan upgrades take effect immediately and unlock new limits in the same session."
+        },
+        {
+          "id": "upgrade-proration",
+          "title": "Upgrade Billing",
+          "content": "The next invoice includes prorated charges for the upgraded plan."
+        }
+      ],
+      "tags": ["billing", "subscription"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "data-export-001",
+      "question": "How does a customer export workspace data?",
+      "expectedFacts": [
+        "Admins can request a data export from workspace settings",
+        "The export is delivered as a downloadable archive"
+      ],
+      "documents": [
+        {
+          "id": "export-settings",
+          "title": "Data Export Request",
+          "content": "Workspace admins can request a data export from workspace settings."
+        },
+        {
+          "id": "export-delivery",
+          "title": "Export Delivery",
+          "content": "When processing finishes, the export is delivered as a downloadable archive."
+        },
+        {
+          "id": "export-format",
+          "title": "Export Format",
+          "content": "Exports include CSV files for tables and JSON files for audit events."
+        }
+      ],
+      "tags": ["privacy", "export"],
+      "difficulty": "medium"
+    },
+    {
+      "id": "team-invites-001",
+      "question": "What should I know about inviting teammates?",
+      "expectedFacts": [
+        "Admins and managers can invite teammates",
+        "Invitations expire after 7 days"
+      ],
+      "documents": [
+        {
+          "id": "invite-roles",
+          "title": "Invite Roles",
+          "content": "Admins and managers can invite teammates from the Members screen."
+        },
+        {
+          "id": "invite-expiry",
+          "title": "Invite Expiry",
+          "content": "Pending team invitations expire after 7 days if they are not accepted."
+        },
+        {
+          "id": "invite-resend",
+          "title": "Resend Invites",
+          "content": "Expired invitations can be resent by an admin."
+        }
+      ],
+      "tags": ["team", "permissions"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "invoice-download-001",
+      "question": "Where can billing invoices be downloaded?",
+      "expectedFacts": [
+        "Invoices are available in the billing history page",
+        "Only billing admins can download invoices"
+      ],
+      "documents": [
+        {
+          "id": "invoice-location",
+          "title": "Invoice Location",
+          "content": "Invoices are available in the billing history page for each workspace."
+        },
+        {
+          "id": "invoice-permission",
+          "title": "Invoice Permission",
+          "content": "Only billing admins can download invoice PDFs."
+        },
+        {
+          "id": "invoice-email",
+          "title": "Invoice Email",
+          "content": "Billing contacts also receive invoice notification emails."
+        }
+      ],
+      "tags": ["billing", "invoice"],
+      "difficulty": "easy"
+    },
+    {
+      "id": "security-policy-001",
+      "question": "What security controls protect customer accounts?",
+      "expectedFacts": [
+        "Single sign on is available on enterprise plans",
+        "Audit logs record administrative changes",
+        "Two factor authentication can be required"
+      ],
+      "documents": [
+        {
+          "id": "security-sso",
+          "title": "Single Sign On",
+          "content": "Single sign on is available on enterprise plans for centralized identity management."
+        },
+        {
+          "id": "security-audit",
+          "title": "Audit Logs",
+          "content": "Audit logs record administrative changes such as role updates and billing changes."
+        },
+        {
+          "id": "security-2fa",
+          "title": "Two Factor Authentication",
+          "content": "Workspace owners can require two factor authentication for all members."
+        }
+      ],
+      "tags": ["security", "enterprise"],
+      "difficulty": "hard"
+    }
+  ]
+}
