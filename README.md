@@ -86,7 +86,7 @@ It includes:
 
 ## 📊 Example Dashboard
 
-![Dashboard](./assets/report.png)
+![Dashboard](./assets/dashboard.png)
 
 ## Running The Dashboard
 
