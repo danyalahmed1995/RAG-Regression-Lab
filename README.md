@@ -83,11 +83,10 @@ It includes:
 - Historical run list from `reports/` and `agentrun-ledger/runs/`.
 - Refresh button and Run Demo button backed by the local dashboard API.
 
-Screenshot placeholder:
 
-```text
-docs/screenshots/dashboard.png
-```
+## 📊 Example Dashboard
+
+![Dashboard](./assets/report.png)
 
 ## Running The Dashboard
 
