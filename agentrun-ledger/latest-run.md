@@ -1,20 +1,20 @@
-# RAG Regression Report: candidate-keyword-top1-2026-05-03T21-48-39-657Z-39cc3024
+# RAG Regression Report: candidate-keyword-top1-2026-05-03T22-16-34-285Z-0a98e117
 
-Generated: 2026-05-03T21:48:39.657Z
+Generated: 2026-05-03T22:16:34.285Z
 
 Suite: SaaS Help Center Demo Suite (8 tests)
 
 ## Configuration
 
-- Run id: candidate-keyword-top1-2026-05-03T21-48-39-657Z-39cc3024
-- Baseline run id: baseline-keyword-top3-2026-05-03T21-48-39-579Z-005c911b
+- Run id: candidate-keyword-top1-2026-05-03T22-16-34-285Z-0a98e117
+- Baseline run id: baseline-keyword-top3-2026-05-03T22-16-34-217Z-e944200e
 - Model/provider: local deterministic mock
 - Embedding config: none
 - Retriever: keyword
 - Generator: extractive
 - Top K: 1
 - Scoring: heuristic-v1 overall=0.40 facts + 0.25 faithfulness + 0.20 context + 0.15 similarity
-- Command: `npm run demo candidate`
+- Command: `dashboard Run Demo candidate`
 - Environment: win32 x64, node v24.14.1
 
 ## Score Summary
@@ -27,7 +27,7 @@ Suite: SaaS Help Center Demo Suite (8 tests)
 - Average faithfulness: 1
 - Average answer similarity: 0.5394
 - Average context precision: 1
-- Average latency: 0.1338ms
+- Average latency: 0.0987ms
 
 ## Failed Or Regressed Tests
 

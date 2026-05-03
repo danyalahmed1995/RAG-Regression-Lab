@@ -90,6 +90,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+dist-dashboard/
 
 # RAG Regression Lab generated output
 reports/*.json

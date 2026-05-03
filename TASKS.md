@@ -31,8 +31,18 @@
 
 ## Follow-Up Ideas
 
-- [ ] Add a small web dashboard.
+- [x] Add a small web dashboard.
 - [ ] Add SQLite historical run browsing.
 - [ ] Add optional real provider adapters behind the offline default.
 - [ ] Add CI examples for regression gates.
 
+## Dashboard Upgrade Tasks
+
+- [x] Add dashboard API/data adapter helpers.
+- [x] Add provider config parser and provider interfaces.
+- [x] Add CI regression gate command.
+- [x] Add Vite React dashboard UI.
+- [x] Add dashboard/history/ledger/report tests.
+- [x] Update README for dashboard, provider modes, and CI gate.
+- [x] Regenerate AgentRun Ledger recovery context.
+- [x] Run full validation loop.

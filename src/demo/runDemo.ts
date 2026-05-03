@@ -58,14 +58,20 @@ export async function runDemo(options: {
     changedFiles: [
       "package.json",
       "tsconfig.json",
+      "vite.config.ts",
+      "index.html",
       "data/demo-suite.json",
       "src/core/*",
+      "src/ci/ragGate.ts",
       "src/cli/index.ts",
+      "src/dashboard/*",
       "src/demo/runDemo.ts",
       "src/ledger/agentRunLedger.ts",
+      "src/server/*",
       "tests/*",
       "README.md",
-      ".gitignore"
+      ".gitignore",
+      "rag-provider.config.example.json"
     ],
     passedCommands: [
       "npm.cmd install",
@@ -73,7 +79,9 @@ export async function runDemo(options: {
       "npm.cmd run lint",
       "npm.cmd run test",
       "npm.cmd run build",
-      "npm.cmd run demo"
+      "npm.cmd run demo",
+      "npm.cmd run dashboard:build",
+      "npm.cmd run ci:rag"
     ],
     failedCommands: [],
     unresolvedIssues: []

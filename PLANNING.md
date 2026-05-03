@@ -30,3 +30,11 @@ This file satisfies `agent-recipes/planning-session.md` after the recipes were a
 - `agent-recipes/` was missing when implementation started and was added afterward.
 - PowerShell blocks `.ps1` shims in this environment, so validation uses `npm.cmd` and `agentrun.cmd`.
 
+## Dashboard Upgrade Plan
+
+- Add an Express dashboard server with API endpoints for latest report data, ledger data, history, and demo execution.
+- Add a Vite React dashboard under `src/dashboard/` with a dark Material-inspired layout, summary cards, regression table, detail panel, report viewer, ledger viewer, and history list.
+- Keep the existing CLI demo and generated report workflow unchanged.
+- Add provider config parsing for `offline`, `openai`, and `groq`, with offline as the only implemented default provider.
+- Add a CI regression gate command that defaults to a passing self-check while still supporting strict thresholds through env/config.
+- Add focused tests for data discovery/loading, empty states, provider config, and CI gate behavior.

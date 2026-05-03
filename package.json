@@ -12,6 +12,11 @@
     "rag:compare": "tsx src/cli/index.ts compare",
     "rag:report": "tsx src/cli/index.ts report",
     "demo": "tsx src/cli/index.ts demo",
+    "dashboard": "tsx src/server/dashboardServer.ts",
+    "dashboard:smoke": "tsx src/server/smokeDashboard.ts",
+    "dev": "vite --host 127.0.0.1",
+    "dashboard:build": "vite build",
+    "ci:rag": "tsx src/ci/ragGate.ts",
     "lint": "tsc --noEmit",
     "test": "vitest run tests",
     "build": "tsc"
@@ -28,8 +33,17 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
+    "@types/express": "^5.0.6",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "express": "^5.2.1",
+    "lucide-react": "^0.556.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
+    "vite": "^7.2.7",
     "vitest": "^4.0.14"
   }
 }

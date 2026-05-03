@@ -45,7 +45,7 @@ Last updated: ${new Date().toISOString()}
 
 ## What Was Built
 
-RAG Regression Lab is implemented as a local-first TypeScript CLI. It loads JSON test suites, runs deterministic keyword retrieval plus extractive generation, scores answer quality with transparent heuristics, compares candidate runs against a baseline, writes human and machine-readable reports, and updates AgentRun Ledger artifacts.
+RAG Regression Lab is implemented as a local-first TypeScript CLI plus a Material-inspired web dashboard. It loads JSON test suites, runs deterministic keyword retrieval plus extractive generation, scores answer quality with transparent heuristics, compares candidate runs against a baseline, writes human and machine-readable reports, exposes dashboard data APIs, and updates AgentRun Ledger artifacts.
 
 ## Latest Run
 
@@ -67,9 +67,21 @@ ${options.passedCommands.length > 0 ? options.passedCommands.map((command) => `-
 
 ${options.failedCommands.length > 0 ? options.failedCommands.map((command) => `- \`${command}\``).join("\n") : "- None recorded."}
 
+## Dashboard And Commands Added
+
+- \`npm.cmd run dashboard\` starts the local Express dashboard server.
+- \`npm.cmd run dev\` starts Vite for frontend development with \`/api\` proxied to the dashboard server.
+- \`npm.cmd run dashboard:build\` builds the React dashboard into \`dist-dashboard/\`.
+- \`npm.cmd run ci:rag\` runs the demo-friendly regression gate.
+
 ## Unresolved Issues
 
 ${options.unresolvedIssues.length > 0 ? options.unresolvedIssues.map((issue) => `- ${issue}`).join("\n") : "- None known."}
+
+## Known Limitations
+
+- Real OpenAI and Groq providers are represented by validated config stubs only; the default offline provider is the working implementation.
+- The dashboard reads local generated artifacts and is intended for local portfolio/demo use, not multi-user hosting.
 
 ## Important Files Changed
 
@@ -80,7 +92,7 @@ ${options.changedFiles.map((file) => `- ${file}`).join("\n")}
 1. Re-read \`rag-regression-lab-codex-task.md\`.
 2. Read the \`agent-recipes/\` files and follow the matching recipe for the next work type.
 3. Inspect \`agentrun-ledger/latest-run.md\` and \`agentrun-ledger/latest-run.json\`.
-4. Run \`npm.cmd run test\`, \`npm.cmd run build\`, and \`npm.cmd run demo\`.
+4. Run \`npm.cmd run test\`, \`npm.cmd run build\`, \`npm.cmd run dashboard:build\`, \`npm.cmd run demo\`, and \`npm.cmd run ci:rag\`.
 5. Continue from the first failing requirement or validation command.
 `;
 }

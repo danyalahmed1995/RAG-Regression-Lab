@@ -1,0 +1,7 @@
+{
+  "provider": "offline",
+  "model": "mock-extractive",
+  "retriever": "keyword",
+  "generator": "extractive",
+  "topK": 3
+}

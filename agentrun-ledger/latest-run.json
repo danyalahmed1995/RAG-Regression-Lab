@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "runId": "candidate-keyword-top1-2026-05-03T21-48-39-657Z-39cc3024",
-    "timestamp": "2026-05-03T21:48:39.657Z",
+    "runId": "candidate-keyword-top1-2026-05-03T22-16-34-285Z-0a98e117",
+    "timestamp": "2026-05-03T22:16:34.285Z",
     "appVersion": "0.1.0",
     "gitBranch": "main",
-    "gitCommit": "0f6767e",
-    "command": "npm run demo candidate",
+    "gitCommit": "f5e1293",
+    "command": "dashboard Run Demo candidate",
     "environment": "win32 x64, node v24.14.1",
     "suitePath": "data\\demo-suite.json",
     "suiteName": "SaaS Help Center Demo Suite",
-    "baselineRunId": "baseline-keyword-top3-2026-05-03T21-48-39-579Z-005c911b",
+    "baselineRunId": "baseline-keyword-top3-2026-05-03T22-16-34-217Z-e944200e",
     "modelProvider": "local deterministic mock",
     "embeddingConfig": "none",
     "retrieverConfig": "keyword",
@@ -52,7 +52,7 @@
         "overallScore": 0.725
       },
       "passed": true,
-      "latencyMs": 0.15,
+      "latencyMs": 0.11,
       "regressionStatus": "regressed"
     },
     {
@@ -79,7 +79,7 @@
         "overallScore": 0.7333
       },
       "passed": true,
-      "latencyMs": 0.47,
+      "latencyMs": 0.08,
       "regressionStatus": "regressed"
     },
     {
@@ -106,7 +106,7 @@
         "overallScore": 0.725
       },
       "passed": true,
-      "latencyMs": 0.09,
+      "latencyMs": 0.07,
       "regressionStatus": "regressed"
     },
     {
@@ -133,7 +133,7 @@
         "overallScore": 0.85
       },
       "passed": true,
-      "latencyMs": 0.08,
+      "latencyMs": 0.07,
       "regressionStatus": "unchanged"
     },
     {
@@ -160,7 +160,7 @@
         "overallScore": 0.75
       },
       "passed": true,
-      "latencyMs": 0.07,
+      "latencyMs": 0.06,
       "regressionStatus": "regressed"
     },
     {
@@ -187,7 +187,7 @@
         "overallScore": 0.7167
       },
       "passed": false,
-      "latencyMs": 0.06,
+      "latencyMs": 0.05,
       "regressionStatus": "newly_failing"
     },
     {
@@ -214,7 +214,7 @@
         "overallScore": 0.8438
       },
       "passed": true,
-      "latencyMs": 0.07,
+      "latencyMs": 0.27,
       "regressionStatus": "regressed"
     },
     {
@@ -256,7 +256,7 @@
     "averageFaithfulness": 1,
     "averageAnswerSimilarity": 0.5394,
     "averageContextPrecision": 1,
-    "averageLatencyMs": 0.1338,
+    "averageLatencyMs": 0.0987,
     "importantFailures": [
       "team-invites-001: 0.7167",
       "security-policy-001: 0.6369"
