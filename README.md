@@ -1,5 +1,27 @@
 # RAG Regression Lab
 
+![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-Enabled-blue?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-Fast%20Dev-yellow?logo=vite)
+![CLI + Dashboard](https://img.shields.io/badge/UI-CLI%20%2B%20Dashboard-purple)
+
+![RAG Evaluation](https://img.shields.io/badge/RAG-Evaluation%20Framework-blue)
+![AI Regression Testing](https://img.shields.io/badge/AI-Regression%20Testing-red)
+![LLM Ready](https://img.shields.io/badge/LLM-Ready-ff69b4)
+![Offline Mode](https://img.shields.io/badge/Mode-Offline%20First-green)
+
+![Deterministic Scoring](https://img.shields.io/badge/Scoring-Deterministic-blue)
+![AgentRun Ledger](https://img.shields.io/badge/Agent-Memory%20Enabled-orange)
+![CI Ready](https://img.shields.io/badge/CI-Regression%20Gate-critical)
+![Reports](https://img.shields.io/badge/Reports-Markdown%20%2B%20JSON-informational)
+
+![Tests](https://img.shields.io/badge/Tests-Vitest-green)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
+![AI Engineering](https://img.shields.io/badge/Focus-AI%20Engineering-black)
+
+
+
 RAG Regression Lab is a local-first evaluation harness for RAG apps. It lets you run the same question set against different retrieval/generation configs, score the outputs, detect regressions, and export reports that humans and AI agents can both understand.
 
 RAG apps often break silently. A prompt, chunking, embedding, or retrieval change can improve one answer and damage another. This project makes those quality changes visible before they reach users.
@@ -87,6 +109,12 @@ It includes:
 ## 📊 Example Dashboard
 
 ![Dashboard](./assets/dashboard.png)
+
+![Report](./assets/report.png)
+
+![Agent Ledger](./assets/agentledger.png)
+
+![History](./assets/history.png)
 
 ## Running The Dashboard
 
